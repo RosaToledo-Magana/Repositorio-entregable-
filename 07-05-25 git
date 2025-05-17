@@ -1,0 +1,18 @@
+(base) PS C:\Users\lisse> cd (base) PS C:\Users\lisse> git status 
+(base) PS C:\Users\lisse> git config --global user.name "RosaToledo-Magana" 
+(base) PS C:\Users\lisse> git config --global user.email "rosa.toledo.m96@gmail.com" 
+(base) PS C:\Users\lisse> git remote add origin https://github.com/RosaToledo-Magana/Repositorio-entregable-.git error: remote origin already exists. 
+(base) PS C:\Users\lisse> git clone https://github.com/RosaToledo-Magana/Repositorio-entregable-.git Cloning into 'Repositorio-entregable-'... warning: You appear to have cloned an empty repository. 
+(base) PS C:\Users\lisse> cd Repositorio-entregable- 
+(base) PS C:\Users\lisse\Repositorio-entregable-> ls
+
+Directorio: C:\Users\lisse\Repositorio-entregable-
+Mode LastWriteTime Length Name
+
+-a---- 16/05/2025 08:54 p. m. 142 Repositorio entregable.txt
+
+(base) PS C:\Users\lisse\Repositorio-entregable-> git init Reinitialized existing Git repository in C:/Users/lisse/Repositorio-entregable-/.git/ 
+(base) PS C:\Users\lisse\Repositorio-entregable-> git add Repositorio entregable.txt fatal: pathspec 'Repositorio' did not match any files 
+(base) PS C:\Users\lisse\Repositorio-entregable-> git addRepositorioentregable.txt git: 'addRepositorioentregable.txt' is not a git command. See 'git --help'. 
+(base) PS C:\Users\lisse\Repositorio-entregable-> git add Repositoriio entregable.txt fatal: pathspec 'Repositoriio' did not match any files 
+(base) PS C:\Users\lisse\Repositorio-entregable-> git commit -m "cambio de titulo"
