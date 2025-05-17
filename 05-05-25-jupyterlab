@@ -1,0 +1,545 @@
+(base) PS C:\Users\lisse> conda env list
+
+# conda environments:
+#
+base                 * C:\Users\lisse\anaconda3
+jupyterlab             C:\Users\lisse\anaconda3\envs\jupyterlab
+python                 C:\Users\lisse\anaconda3\envs\python
+
+(base) PS C:\Users\lisse> conda create --yes -n jupyterlab -c conda-forge python=3.12 jupyter jupyterlab-language-pack-es-ES nb_conda_kernels matplotlib pandas netcdf4
+Retrieving notices: done
+Channels:
+ - conda-forge
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\lisse\anaconda3\envb
+
+  added / updated specs:
+    - jupyter
+    - jupyterlab-language-pack-es-es
+    - matplotlib
+    - nb_conda_kernels
+    - netcdf4
+    - pandas
+    - python=3.12
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    exceptiongroup-1.3.0       |     pyhd8ed1ab_0   e
+    fonttools-4.58.0           |  py312h31fea79_0   e
+    harfbuzz-11.2.1            |       h8796e6f_0   e
+    jupyter_server-2.16.0      |     pyhe01879c_0   e
+    libclang13-20.1.5          |default_h6e92b77_0  e
+    libdeflate-1.24            |       h76ddb4d_0   e
+    libgcc-15.1.0              |       h1383e82_2   e
+    libglib-2.84.1             |       hbc94333_1   e
+    libgomp-15.1.0             |       h1383e82_2   e
+    libsqlite-3.49.2           |       h67fdade_0   e
+    libtiff-4.7.0              |       h05922d8_5   e
+    libxml2-2.13.8             |       h442d1da_0   e
+    matplotlib-3.10.3          |  py312h2e8e312_0   e
+    matplotlib-base-3.10.3     |  py312h90004f6_0   e
+    pcre2-10.45                |       h99c9b8b_0   e
+    pillow-11.2.1              |  py312h078707f_0   e
+    platformdirs-4.3.8         |     pyhe01879c_0   e
+    qt6-main-6.9.0             |       h02ddd7d_3   e
+    rpds-py-0.25.0             |  py312h8422cdd_0   e
+    tornado-6.5                |  py312h4389bb4_0   e
+    types-python-dateutil-2.9.0.20250516|     pyhd8ee
+    -------------------------------------------------
+                                           Total:   B
+
+The following NEW packages will be INSTALLED:
+
+  _openmp_mutex      conda-forge/win-64::_openmp_mut
+  anyio              conda-forge/noarch::anyio-4.9.0
+  argon2-cffi        conda-forge/noarch::argon2-cffi
+  argon2-cffi-bindi~ conda-forge/win-64::argon2-cffi
+  arrow              conda-forge/noarch::arrow-1.3.0
+  asttokens          conda-forge/noarch::asttokens-3
+  async-lru          conda-forge/noarch::async-lru-2
+  attrs              conda-forge/noarch::attrs-25.3.
+  babel              conda-forge/noarch::babel-2.17.
+  beautifulsoup4     conda-forge/noarch::beautifulso
+  bleach             conda-forge/noarch::bleach-6.2.
+  bleach-with-css    conda-forge/noarch::bleach-with
+  blosc              conda-forge/win-64::blosc-1.21.
+  brotli             conda-forge/win-64::brotli-1.1.
+  brotli-bin         conda-forge/win-64::brotli-bin-
+  brotli-python      conda-forge/win-64::brotli-pyth
+  bzip2              conda-forge/win-64::bzip2-1.0.8
+  ca-certificates    conda-forge/noarch::ca-certific
+  cached-property    conda-forge/noarch::cached-prop
+  cached_property    conda-forge/noarch::cached_prop
+  cairo              conda-forge/win-64::cairo-1.18.
+  certifi            conda-forge/noarch::certifi-202
+  cffi               conda-forge/win-64::cffi-1.17.1
+  cftime             conda-forge/win-64::cftime-1.6.
+  charset-normalizer conda-forge/noarch::charset-nor
+  colorama           conda-forge/noarch::colorama-0.
+  comm               conda-forge/noarch::comm-0.2.2-
+  contourpy          conda-forge/win-64::contourpy-1
+  cpython            conda-forge/noarch::cpython-3.1
+  cycler             conda-forge/noarch::cycler-0.12
+  debugpy            conda-forge/win-64::debugpy-1.8
+  decorator          conda-forge/noarch::decorator-5
+  defusedxml         conda-forge/noarch::defusedxml-
+  double-conversion  conda-forge/win-64::double-conv
+  exceptiongroup     conda-forge/noarch::exceptiongr
+  executing          conda-forge/noarch::executing-2
+  font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-de
+  font-ttf-inconsol~ conda-forge/noarch::font-ttf-in
+  font-ttf-source-c~ conda-forge/noarch::font-ttf-so
+  font-ttf-ubuntu    conda-forge/noarch::font-ttf-ub
+  fontconfig         conda-forge/win-64::fontconfig-
+  fonts-conda-ecosy~ conda-forge/noarch::fonts-conda
+  fonts-conda-forge  conda-forge/noarch::fonts-conda
+  fonttools          conda-forge/win-64::fonttools-4
+  fqdn               conda-forge/noarch::fqdn-1.5.1-
+  freetype           conda-forge/win-64::freetype-2.
+  graphite2          conda-forge/win-64::graphite2-1
+  h11                conda-forge/noarch::h11-0.16.0-
+  h2                 conda-forge/noarch::h2-4.2.0-py
+  harfbuzz           conda-forge/win-64::harfbuzz-11
+  hdf4               conda-forge/win-64::hdf4-4.2.15
+  hdf5               conda-forge/win-64::hdf5-1.14.6
+  hpack              conda-forge/noarch::hpack-4.1.0
+  httpcore           conda-forge/noarch::httpcore-1.
+  httpx              conda-forge/noarch::httpx-0.28.
+  hyperframe         conda-forge/noarch::hyperframe-
+  icu                conda-forge/win-64::icu-75.1-he
+  idna               conda-forge/noarch::idna-3.10-p
+  importlib-metadata conda-forge/noarch::importlib-m
+  importlib_resourc~ conda-forge/noarch::importlib_r
+  intel-openmp       conda-forge/win-64::intel-openm
+  ipykernel          conda-forge/noarch::ipykernel-6
+  ipython            conda-forge/noarch::ipython-9.2
+  ipython_pygments_~ conda-forge/noarch::ipython_pyg
+  ipywidgets         conda-forge/noarch::ipywidgets-
+  isoduration        conda-forge/noarch::isoduration
+  jedi               conda-forge/noarch::jedi-0.19.2
+  jinja2             conda-forge/noarch::jinja2-3.1.
+  json5              conda-forge/noarch::json5-0.12.
+  jsonpointer        conda-forge/win-64::jsonpointer
+  jsonschema         conda-forge/noarch::jsonschema-
+  jsonschema-specif~ conda-forge/noarch::jsonschema-
+  jsonschema-with-f~ conda-forge/noarch::jsonschema-
+  jupyter            conda-forge/noarch::jupyter-1.1
+  jupyter-lsp        conda-forge/noarch::jupyter-lsp
+  jupyter_client     conda-forge/noarch::jupyter_cli
+  jupyter_console    conda-forge/noarch::jupyter_con
+  jupyter_core       conda-forge/noarch::jupyter_cor
+  jupyter_events     conda-forge/noarch::jupyter_eve
+  jupyter_server     conda-forge/noarch::jupyter_ser
+  jupyter_server_te~ conda-forge/noarch::jupyter_ser
+  jupyterlab         conda-forge/noarch::jupyterlab-
+  jupyterlab-langua~ conda-forge/noarch::jupyterlab-
+  jupyterlab_pygmen~ conda-forge/noarch::jupyterlab_
+  jupyterlab_server  conda-forge/noarch::jupyterlab_
+  jupyterlab_widgets conda-forge/noarch::jupyterlab_
+  kiwisolver         conda-forge/win-64::kiwisolver-
+  krb5               conda-forge/win-64::krb5-1.21.3
+  lcms2              conda-forge/win-64::lcms2-2.17-
+  lerc               conda-forge/win-64::lerc-4.0.0-
+  libaec             conda-forge/win-64::libaec-1.1.
+  libblas            conda-forge/win-64::libblas-3.9
+  libbrotlicommon    conda-forge/win-64::libbrotlico
+  libbrotlidec       conda-forge/win-64::libbrotlide
+  libbrotlienc       conda-forge/win-64::libbrotlien
+  libcblas           conda-forge/win-64::libcblas-3.
+  libclang13         conda-forge/win-64::libclang13-
+  libcurl            conda-forge/win-64::libcurl-8.1
+  libdeflate         conda-forge/win-64::libdeflate-
+  libexpat           conda-forge/win-64::libexpat-2.
+  libffi             conda-forge/win-64::libffi-3.4.
+  libfreetype        conda-forge/win-64::libfreetype
+  libfreetype6       conda-forge/win-64::libfreetype
+  libgcc             conda-forge/win-64::libgcc-15.1
+  libglib            conda-forge/win-64::libglib-2.8
+  libgomp            conda-forge/win-64::libgomp-15.
+  libhwloc           conda-forge/win-64::libhwloc-2.
+  libiconv           conda-forge/win-64::libiconv-1.
+  libintl            conda-forge/win-64::libintl-0.2
+  libjpeg-turbo      conda-forge/win-64::libjpeg-tur
+  liblapack          conda-forge/win-64::liblapack-3
+  liblzma            conda-forge/win-64::liblzma-5.8
+  libnetcdf          conda-forge/win-64::libnetcdf-4
+  libpng             conda-forge/win-64::libpng-1.6.
+  libsodium          conda-forge/win-64::libsodium-1
+  libsqlite          conda-forge/win-64::libsqlite-3
+  libssh2            conda-forge/win-64::libssh2-1.1
+  libtiff            conda-forge/win-64::libtiff-4.7
+  libwebp-base       conda-forge/win-64::libwebp-bas
+  libwinpthread      conda-forge/win-64::libwinpthre
+  libxcb             conda-forge/win-64::libxcb-1.17
+  libxml2            conda-forge/win-64::libxml2-2.1
+  libxslt            conda-forge/win-64::libxslt-1.1
+  libzip             conda-forge/win-64::libzip-1.11
+  libzlib            conda-forge/win-64::libzlib-1.3
+  lz4-c              conda-forge/win-64::lz4-c-1.10.
+  markupsafe         conda-forge/win-64::markupsafe-
+  matplotlib         conda-forge/win-64::matplotlib-
+  matplotlib-base    conda-forge/win-64::matplotlib-
+  matplotlib-inline  conda-forge/noarch::matplotlib-
+  mistune            conda-forge/noarch::mistune-3.1
+  mkl                conda-forge/win-64::mkl-2024.2.
+  munkres            conda-forge/noarch::munkres-1.1
+  nb_conda_kernels   conda-forge/noarch::nb_conda_ke
+  nbclient           conda-forge/noarch::nbclient-0.
+  nbconvert-core     conda-forge/noarch::nbconvert-c
+  nbformat           conda-forge/noarch::nbformat-5.
+  nest-asyncio       conda-forge/noarch::nest-asynci
+  netcdf4            conda-forge/win-64::netcdf4-1.7
+  notebook           conda-forge/noarch::notebook-7.
+  notebook-shim      conda-forge/noarch::notebook-sh
+  numpy              conda-forge/win-64::numpy-2.2.5
+  openjpeg           conda-forge/win-64::openjpeg-2.
+  openssl            conda-forge/win-64::openssl-3.5
+  overrides          conda-forge/noarch::overrides-7
+  packaging          conda-forge/noarch::packaging-2
+  pandas             conda-forge/win-64::pandas-2.2.
+  pandocfilters      conda-forge/noarch::pandocfilte
+  parso              conda-forge/noarch::parso-0.8.4
+  pcre2              conda-forge/win-64::pcre2-10.45
+  pickleshare        conda-forge/noarch::pickleshare
+  pillow             conda-forge/win-64::pillow-11.2
+  pip                conda-forge/noarch::pip-25.1.1-
+  pixman             conda-forge/win-64::pixman-0.46
+  pkgutil-resolve-n~ conda-forge/noarch::pkgutil-res
+  platformdirs       conda-forge/noarch::platformdir
+  prometheus_client  conda-forge/noarch::prometheus_
+  prompt-toolkit     conda-forge/noarch::prompt-tool
+  prompt_toolkit     conda-forge/noarch::prompt_tool
+  psutil             conda-forge/win-64::psutil-7.0.
+  pthread-stubs      conda-forge/win-64::pthread-stu
+  pure_eval          conda-forge/noarch::pure_eval-0
+  pycparser          conda-forge/noarch::pycparser-2
+  pygments           conda-forge/noarch::pygments-2.
+  pyparsing          conda-forge/noarch::pyparsing-3
+  pyside6            conda-forge/win-64::pyside6-6.9
+  pysocks            conda-forge/noarch::pysocks-1.7
+  python             conda-forge/win-64::python-3.12
+  python-dateutil    conda-forge/noarch::python-date
+  python-fastjsonsc~ conda-forge/noarch::python-fast
+  python-json-logger conda-forge/noarch::python-json
+  python-tzdata      conda-forge/noarch::python-tzda
+  python_abi         conda-forge/noarch::python_abi-
+  pytz               conda-forge/noarch::pytz-2025.2
+  pywin32            conda-forge/win-64::pywin32-307
+  pywinpty           conda-forge/win-64::pywinpty-2.
+  pyyaml             conda-forge/win-64::pyyaml-6.0.
+  pyzmq              conda-forge/win-64::pyzmq-26.4.
+  qhull              conda-forge/win-64::qhull-2020.
+  qt6-main           conda-forge/win-64::qt6-main-6.
+  referencing        conda-forge/noarch::referencing
+  requests           conda-forge/noarch::requests-2.
+  rfc3339-validator  conda-forge/noarch::rfc3339-val
+  rfc3986-validator  conda-forge/noarch::rfc3986-val
+  rpds-py            conda-forge/win-64::rpds-py-0.2
+  send2trash         conda-forge/noarch::send2trash-
+  setuptools         conda-forge/noarch::setuptools-
+  six                conda-forge/noarch::six-1.17.0-
+  snappy             conda-forge/win-64::snappy-1.2.
+  sniffio            conda-forge/noarch::sniffio-1.3
+  soupsieve          conda-forge/noarch::soupsieve-2
+  stack_data         conda-forge/noarch::stack_data-
+  tbb                conda-forge/win-64::tbb-2021.13
+  terminado          conda-forge/noarch::terminado-0
+  tinycss2           conda-forge/noarch::tinycss2-1.
+  tk                 conda-forge/win-64::tk-8.6.13-h
+  tomli              conda-forge/noarch::tomli-2.2.1
+  tornado            conda-forge/win-64::tornado-6.5
+  traitlets          conda-forge/noarch::traitlets-5
+  types-python-date~ conda-forge/noarch::types-pytho
+  typing-extensions  conda-forge/noarch::typing-exte
+  typing_extensions  conda-forge/noarch::typing_exte
+  typing_utils       conda-forge/noarch::typing_util
+  tzdata             conda-forge/noarch::tzdata-2025
+  ucrt               conda-forge/win-64::ucrt-10.0.2
+  unicodedata2       conda-forge/win-64::unicodedata
+  uri-template       conda-forge/noarch::uri-templat
+  urllib3            conda-forge/noarch::urllib3-2.4
+  vc                 conda-forge/win-64::vc-14.3-h2b
+  vc14_runtime       conda-forge/win-64::vc14_runtim
+  vs2015_runtime     conda-forge/win-64::vs2015_runt
+  wcwidth            conda-forge/noarch::wcwidth-0.2
+  webcolors          conda-forge/noarch::webcolors-2
+  webencodings       conda-forge/noarch::webencoding
+  websocket-client   conda-forge/noarch::websocket-c
+  wheel              conda-forge/noarch::wheel-0.45.
+  widgetsnbextension conda-forge/noarch::widgetsnbex
+  win_inet_pton      conda-forge/noarch::win_inet_pt
+  winpty             conda-forge/win-64::winpty-0.4.
+  xorg-libxau        conda-forge/win-64::xorg-libxau
+  xorg-libxdmcp      conda-forge/win-64::xorg-libxdm
+  yaml               conda-forge/win-64::yaml-0.2.5-
+  zeromq             conda-forge/win-64::zeromq-4.3.
+  zipp               conda-forge/noarch::zipp-3.21.0
+  zlib               conda-forge/win-64::zlib-1.3.1-
+  zstandard          conda-forge/win-64::zstandard-0
+  zstd               conda-forge/win-64::zstd-1.5.7-
+
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: / Enabling nb_conda_kernels...
+CONDA_PREFIX: C:\Users\lisse\anaconda3\envs\jupyterlb
+Status: enabled
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate jupyterlab
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) PS C:\Users\lisse> conda activate jupyterlab
+(jupyterlab) PS C:\Users\lisse> conda env list
+
+# conda environments:
+#
+base                   C:\Users\lisse\anaconda3
+jupyterlab           * C:\Users\lisse\anaconda3\envs\jupyterlab
+python                 C:\Users\lisse\anaconda3\envs\python
+
+(jupyterlab) PS C:\Users\lisse> conda desactivate
+usage: conda-script.py [-h] [-v] [--no-plugins]
+                       [-V]
+                       COMMAND ...
+conda-script.py: error: argument COMMAND: invalid choice: 'desactivate' (choose from 'activate', 'clean', 'commands', 'compare', 'config', 'create', 'deactivate', 'env', 'export', 'info', 'init', 'install', 'list', 'notices', 'package', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'repoquery', 'skeleton', 'repo', 'server', 'pack', 'token', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade')
+(jupyterlab) PS C:\Users\lisse> conda deactivate
+(base) PS C:\Users\lisse> conda activate jupyterlab
+(jupyterlab) PS C:\Users\lisse> conda activate base
+(base) PS C:\Users\lisse> conda activate jupyterlab
+(jupyterlab) PS C:\Users\lisse> jupyter lab
+[I 2025-05-15 00:16:27.760 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-15 00:16:27.765 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-15 00:16:27.771 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-15 00:16:27.777 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-15 00:16:28.566 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-15 00:16:30.081 ServerApp] nb_conda_kernels | enabled, 2 kernels found.
+[I 2025-05-15 00:16:30.263 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-15 00:16:30.267 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-15 00:16:30.268 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-15 00:16:30.276 LabApp] JupyterLab extension loaded from C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyterlab
+[I 2025-05-15 00:16:30.276 LabApp] JupyterLab application directory is C:\Users\lisse\anaconda3\envs\jupyterlab\share\jupyter\lab
+[I 2025-05-15 00:16:30.277 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-15 00:16:30.516 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-15 00:16:30.535 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-15 00:16:30.538 ServerApp] Serving notebooks from local directory: C:\Users\lisse
+[I 2025-05-15 00:16:30.538 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-05-15 00:16:30.538 ServerApp] http://localhost:8888/lab?token=29997f56260f6bf0f6ce97ba5070b1dbdfa1430dca27ab6f
+[I 2025-05-15 00:16:30.538 ServerApp]     http://127.0.0.1:8888/lab?token=29997f56260f6bf0f6ce97ba5070b1dbdfa1430dca27ab6f
+[I 2025-05-15 00:16:30.538 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-15 00:16:30.635 ServerApp]
+
+    To access the server, open this file in a browser:
+        file:///C:/Users/lisse/AppData/Roaming/jupyter/runtime/jpserver-14300-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=29997f56260f6bf0f6ce97ba5070b1dbdfa1430dca27ab6f
+        http://127.0.0.1:8888/lab?token=29997f56260f6bf0f6ce97ba5070b1dbdfa1430dca27ab6f
+[I 2025-05-15 00:16:30.852 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-05-15 00:16:33.245 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-15 00:16:34.627 ServerApp] Kernel started: 06f4e424-32d0-4d53-ab8e-d30de330fee2
+[I 2025-05-15 00:16:34.635 ServerApp] Kernel started: 6322cd9f-4ab7-4c02-96d7-334b1388acc7
+Página de códigos activa: 65001
+[I 2025-05-15 00:16:35.756 ServerApp] Connecting to kernel 06f4e424-32d0-4d53-ab8e-d30de330fee2.
+[W 2025-05-15 00:16:35.765 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+CONDA_PREFIX=C:\Users\lisse\anaconda3\envs\jupyterlab
+0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-05-15 00:16:38.847 ServerApp] Connecting to kernel 6322cd9f-4ab7-4c02-96d7-334b1388acc7.
+[I 2025-05-15 00:16:38.854 ServerApp] Connecting to kernel 6322cd9f-4ab7-4c02-96d7-334b1388acc7.
+[I 2025-05-15 00:16:38.875 ServerApp] Connecting to kernel 6322cd9f-4ab7-4c02-96d7-334b1388acc7.
+[W 2025-05-15 00:16:38.895 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x00000232FD3772F0>
+[W 2025-05-15 00:16:38.924 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x00000232FD37E3F0>
+[I 2025-05-15 00:18:34.619 ServerApp] Interrupted...
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+(jupyterlab) PS C:\Users\lisse> jupyter notebook
+[I 2025-05-15 00:19:21.286 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-15 00:19:21.290 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-15 00:19:21.297 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-15 00:19:21.304 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-15 00:19:21.562 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-15 00:19:23.197 ServerApp] nb_conda_kernels | enabled, 2 kernels found.
+[I 2025-05-15 00:19:23.288 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-15 00:19:23.292 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-15 00:19:23.293 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-15 00:19:23.301 LabApp] JupyterLab extension loaded from C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyterlab
+[I 2025-05-15 00:19:23.301 LabApp] JupyterLab application directory is C:\Users\lisse\anaconda3\envs\jupyterlab\share\jupyter\lab
+[I 2025-05-15 00:19:23.302 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-15 00:19:23.390 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-15 00:19:23.400 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-15 00:19:23.401 ServerApp] Serving notebooks from local directory: C:\Users\lisse
+[I 2025-05-15 00:19:23.401 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-05-15 00:19:23.401 ServerApp] http://localhost:8888/tree?token=ac295c282dfcb6e2ede3d4c5bb9755b01b2cbffc8b6de592
+[I 2025-05-15 00:19:23.403 ServerApp]     http://127.0.0.1:8888/tree?token=ac295c282dfcb6e2ede3d4c5bb9755b01b2cbffc8b6de592
+[I 2025-05-15 00:19:23.403 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-15 00:19:23.466 ServerApp]
+
+    To access the server, open this file in a browser:
+        file:///C:/Users/lisse/AppData/Roaming/jupyter/runtime/jpserver-20232-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=ac295c282dfcb6e2ede3d4c5bb9755b01b2cbffc8b6de592
+        http://127.0.0.1:8888/tree?token=ac295c282dfcb6e2ede3d4c5bb9755b01b2cbffc8b6de592
+[I 2025-05-15 00:19:23.633 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-05-15 00:19:56.427 ServerApp] 400 GET /api/contents/Music/%E3%80%90TVPP%E3%80%91%20Hyorin(SISTAR)%20-%20SOFA%20%ED%9A%A8%EB%A6%B0(%EC%94%A8%EC%8A%A4%ED%83%80)%20-%20%EC%86%8C%ED%8C%8C%20%40Duet%20Song%20Festival.mp3?type=file&content=1&hash=1&format=text&contentProviderId=undefined&1747462796384 (::1): C:\Users\lisse\Music\【TVPP】 Hyorin(SISTAR) - SOFA 효린(씨스타) - 소파 @Duet Song Festival.mp3 is not UTF-8 encoded
+[W 2025-05-15 00:19:56.427 ServerApp] wrote error: 'C:\\Users\\lisse\\Music\\【TVPP】 Hyorin(SISTAR) - SOFA 효린(씨스타) - 소파 @Duet Song Festival.mp3 is not UTF-8 encoded'
+    Traceback (most recent call last):
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\fileio.py", line 562, in _read_file
+        (bcontent.decode("utf8"), "text", bcontent)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+    UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 138: invalid start byte
+
+    The above exception was the direct cause of the following exception:
+
+    Traceback (most recent call last):
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\tornado\web.py", line 1848, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\auth\decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\handlers.py", line 156, in get
+        model = await ensure_async(
+                ^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_core\utils\__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 926, in get
+        model = await self._file_model(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 835, in _file_model
+        content, format, bytes_content = await self._read_file(os_path, format, raw=True)  # type: ignore[misc]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\fileio.py", line 562, in _read_file
+        (bcontent.decode("utf8"), "text", bcontent)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+    UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 138: invalid start byte
+
+    The above exception was the direct cause of the following exception:
+
+    Traceback (most recent call last):
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\tornado\web.py", line 1848, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\auth\decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\handlers.py", line 156, in get
+        model = await ensure_async(
+                ^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_core\utils\__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 926, in get
+        model = await self._file_model(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyter_server\services\contents\filemanager.py", line 835, in _file_model
+        content, format, bytes_content = await self._read_file(os_path, format, raw=True)  # type: ignore[misc]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\lisse\anaconda3\envb
+
+  added / updated specs:
+    - seaborn
+
+
+The following NEW packages will be INSTALLED:
+
+  patsy              conda-forge/noarch::patsy-1.0.1
+  scipy              conda-forge/win-64::scipy-1.15.
+  seaborn            conda-forge/noarch::seaborn-0.1
+  seaborn-base       conda-forge/noarch::seaborn-bas
+  statsmodels        conda-forge/win-64::statsmodels
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(jupyterlab) PS C:\Users\lisse> jupyter lab
+[I 2025-05-15 00:27:28.864 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-15 00:27:28.869 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-15 00:27:28.876 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-15 00:27:28.881 ServerApp] notebook | extension was successfully linked.
+[I 2025-05-15 00:27:29.276 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-15 00:27:30.856 ServerApp] nb_conda_kernels | enabled, 2 kernels found.
+[I 2025-05-15 00:27:30.990 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-15 00:27:30.994 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-15 00:27:30.996 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-15 00:27:31.012 LabApp] JupyterLab extension loaded from C:\Users\lisse\anaconda3\envs\jupyterlab\Lib\site-packages\jupyterlab
+[I 2025-05-15 00:27:31.012 LabApp] JupyterLab application directory is C:\Users\lisse\anaconda3\envs\jupyterlab\share\jupyter\lab
+[I 2025-05-15 00:27:31.014 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-15 00:27:31.213 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-15 00:27:31.230 ServerApp] notebook | extension was successfully loaded.
+[I 2025-05-15 00:27:31.234 ServerApp] Serving notebooks from local directory: C:\Users\lisse
+[I 2025-05-15 00:27:31.234 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-05-15 00:27:31.234 ServerApp] http://localhost:8888/lab?token=3c9afa8c708706740e7131305b754a6125e825cc8420f883
+[I 2025-05-15 00:27:31.234 ServerApp]     http://127.0.0.1:8888/lab?token=3c9afa8c708706740e7131305b754a6125e825cc8420f883
+[I 2025-05-15 00:27:31.234 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-05-15 00:27:31.298 ServerApp]
+
+    To access the server, open this file in a browser:
+        file:///C:/Users/lisse/AppData/Roaming/jupyter/runtime/jpserver-4952-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=3c9afa8c708706740e7131305b754a6125e825cc8420f883
+        http://127.0.0.1:8888/lab?token=3c9afa8c708706740e7131305b754a6125e825cc8420f883
+[I 2025-05-15 00:27:31.456 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-05-15 00:27:34.315 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-15 00:29:23.965 ServerApp] Kernel started: b3bad79a-fa5a-4d24-964c-6b5ed86bdda1
+Página de códigos activa: 65001
+CONDA_PREFIX=C:\Users\lisse\anaconda3\envs\jupyterlab
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-05-15 00:29:26.713 ServerApp] Connecting to kernel b3bad79a-fa5a-4d24-964c-6b5ed86bdda1.
+[I 2025-05-15 00:29:26.721 ServerApp] Connecting to kernel b3bad79a-fa5a-4d24-964c-6b5ed86bdda1.
+[W 2025-05-15 00:29:26.728 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2025-05-15 00:29:26.744 ServerApp] Connecting to kernel b3bad79a-fa5a-4d24-964c-6b5ed86bdda1.
+[W 2025-05-15 00:29:26.780 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x0000019239321100>
+[I 2025-05-15 00:31:23.419 ServerApp] Saving file at /mi cuaderno.ipynb
+[I 2025-05-15 00:32:32.836 ServerApp] Saving file at /mi cuaderno.ipynb
+[I 2025-05-15 00:33:04.944 ServerApp] Kernel restarted: b3bad79a-fa5a-4d24-964c-6b5ed86bdda1
+[I 2025-05-15 00:33:04.949 ServerApp] Starting buffering for b3bad79a-fa5a-4d24-964c-6b5ed86bdda1:dc2817d8-e058-44da-9058-0c6617e61101
+[I 2025-05-15 00:33:04.953 ServerApp] Connecting to kernel b3bad79a-fa5a-4d24-964c-6b5ed86bdda1.
+[I 2025-05-15 00:33:04.954 ServerApp] Restoring connection for b3bad79a-fa5a-4d24-964c-6b5ed86bdda1:dc2817d8-e058-44da-9058-0c6617e61101
+Página de códigos activa: 65001
+CONDA_PREFIX=C:\Users\lisse\anaconda3\envs\jupyterlab
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 2025-05-15 00:34:13.170 ServerApp] Saving file at /mi cuaderno.ipynb
+[I 2025-05-15 00:34:14.786 ServerApp] Saving file at /mi cuaderno.ipynb
+[I 2025-05-15 00:34:17.067 ServerApp] Saving file at /mi cuaderno.ipynb
+[I 2025-05-15 00:34:24.983 ServerApp] Saving file at /mi cuaderno.ipynb
